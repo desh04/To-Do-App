@@ -4,24 +4,35 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="src/styles.css" />
     <title>To Do List</title>
   </head>
   <body>
-    <div class="header">
-      <h1 class="heading">To Do list</h1>
+    <Header class="header">
+      <h1 class="heading">To Do list</h1>  
+    </header>
+    <div class=form>       
       <input id="input-field" type="text" placeholder="...add task here" />
-      <button id="add-task-btn" type="button">ADD</button>
+      <button id="add-task-btn" type="button">
+        <i class="fas fa-plus-square"></i>
+      </button>
     </div>
-    <div class="task">
-      <h2>Task list</h2>
-      <ul class="task-list"></ul>
-    </div>
-    <div class="working">
-      <h2>On going</h2>
-    </div>
-    <div class="finished">
-      <h2>Finished</h2>
+    <div class='container'>
+      <div class="task">
+        <h2>Task list</h2>
+        <ul class="task-list"></ul>
+      </div>
+      <div class="working">
+        <h2>On going</h2>
+        <ul class="running-list"></ul>
+      </div>
+      <div class="finished">
+        <h2>Finished</h2>
+        <ul class="finished-list"></ul>
+      </div>
     </div>
 
     <script type="module" src="src/index.js"></script>

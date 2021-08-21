@@ -1,3 +1,46 @@
-body {
-  background-color: rgb(55, 172, 172);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* */
+
+body {
+  background: #9198e5;    /* COMMMMMM : check why linear gradient not working */
+  color:black
+  /* COMMMM: insert font */
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header, .form {
+  min-height: 010vh; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form input, .form button {
+  min-height: 10vh;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none ;
+  background: white;
+}
+
+.form button {
+  color: black ;
+  background:white;
+  cursor: pointer; 
+  transition: all 0.3sec ease;
+
+}
+
+.form button:hover{
+  background: grey;
+  color: white;
+} 
